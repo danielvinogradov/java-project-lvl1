@@ -53,7 +53,7 @@ public final class CliManager {
 
                 Action userAction = Action.fromInt(userChoice);
 
-                if (username.equals(DEFAULT_USERNAME) && userAction != Action.GREET) {
+                if (username.equals(DEFAULT_USERNAME) && userAction != Action.GREET && userAction != Action.EXIT) {
                     new Greeter(username, scanner, this::setUsername).start();
                 }
 
