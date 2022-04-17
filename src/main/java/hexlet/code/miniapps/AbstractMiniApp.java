@@ -20,9 +20,9 @@ public abstract class AbstractMiniApp implements Startable {
      */
     private final Scanner scanner;
 
-    protected AbstractMiniApp(@NotNull String username, @NotNull Scanner scanner) {
-        this.username = username;
-        this.scanner = scanner;
+    protected AbstractMiniApp(@NotNull String u, @NotNull Scanner s) {
+        this.username = u;
+        this.scanner = s;
     }
 
     protected final String getUsername() {

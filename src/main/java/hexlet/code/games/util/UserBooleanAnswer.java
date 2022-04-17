@@ -8,8 +8,8 @@ public enum UserBooleanAnswer {
 
     private final boolean value;
 
-    UserBooleanAnswer(boolean value) {
-        this.value = value;
+    UserBooleanAnswer(boolean v) {
+        this.value = v;
     }
 
     public String getName() {

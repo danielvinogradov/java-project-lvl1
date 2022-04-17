@@ -14,14 +14,14 @@ public final class DefaultEngine implements Engine {
 
     private static final int DEFAULT_MAX_ROUNDS = 3;
 
-    public DefaultEngine(Scanner scanner, String username) {
-        this(scanner, username, DEFAULT_MAX_ROUNDS);
+    public DefaultEngine(Scanner s, String u) {
+        this(s, u, DEFAULT_MAX_ROUNDS);
     }
 
-    public DefaultEngine(Scanner scanner, String username, int rounds) {
-        this.scanner = scanner;
-        this.username = username;
-        this.rounds = rounds;
+    public DefaultEngine(Scanner s, String u, int r) {
+        this.scanner = s;
+        this.username = u;
+        this.rounds = r;
     }
 
     @Override

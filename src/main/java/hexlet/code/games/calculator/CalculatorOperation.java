@@ -25,8 +25,8 @@ public enum CalculatorOperation {
      */
     private final String sign;
 
-    CalculatorOperation(String sign) {
-        this.sign = sign;
+    CalculatorOperation(String s) {
+        sign = s;
     }
 
     /**

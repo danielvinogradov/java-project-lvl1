@@ -51,8 +51,8 @@ public enum Action {
      */
     private final String description;
 
-    Action(String description) {
-        this.description = description;
+    Action(String desc) {
+        description = desc;
     }
 
     /**

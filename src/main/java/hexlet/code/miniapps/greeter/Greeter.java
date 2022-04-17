@@ -36,11 +36,11 @@ public final class Greeter extends AbstractMiniApp {
      *
      * @param username              Имя пользователя.
      * @param scanner               Ссылка на scanner.
-     * @param usernameSetCallbackFn Коллбэк, исполняемый после получения имени пользователя.
+     * @param fn Коллбэк, исполняемый после получения имени пользователя.
      */
-    public Greeter(@NotNull String username, @NotNull Scanner scanner, Consumer<String> usernameSetCallbackFn) {
+    public Greeter(@NotNull String username, @NotNull Scanner scanner, Consumer<String> fn) {
         super(username, scanner);
-        this.usernameSetCallbackFn = usernameSetCallbackFn;
+        this.usernameSetCallbackFn = fn;
     }
 
     /**

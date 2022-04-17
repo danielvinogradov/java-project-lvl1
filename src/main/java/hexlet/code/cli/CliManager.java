@@ -21,9 +21,9 @@ public final class CliManager {
 
     private static final String DEFAULT_USERNAME = "_Unknown user_";
 
-    public CliManager(@NotNull String username, @NotNull Scanner scanner) {
-        this.username = username;
-        this.scanner = scanner;
+    public CliManager(@NotNull String u, @NotNull Scanner s) {
+        username = u;
+        scanner = s;
     }
 
     public CliManager() {

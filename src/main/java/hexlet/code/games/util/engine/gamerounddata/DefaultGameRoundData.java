@@ -12,11 +12,11 @@ public final class DefaultGameRoundData implements GameRoundData {
 
     private final Predicate<String> checker;
 
-    public DefaultGameRoundData(String title, String question, String correctAnswer, Predicate<String> checker) {
-        this.title = title;
-        this.question = question;
-        this.correctAnswer = correctAnswer;
-        this.checker = checker;
+    public DefaultGameRoundData(String t, String q, String c, Predicate<String> ch) {
+        this.title = t;
+        this.question = q;
+        this.correctAnswer = c;
+        this.checker = ch;
     }
 
     @Override
