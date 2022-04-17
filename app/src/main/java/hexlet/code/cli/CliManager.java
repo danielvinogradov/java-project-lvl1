@@ -1,6 +1,7 @@
 package hexlet.code.cli;
 
 import hexlet.code.games.calculator.Calculator;
+import hexlet.code.games.gcd.GCD;
 import hexlet.code.games.paritychecker.ParityChecker;
 import hexlet.code.miniapps.greeter.Greeter;
 import hexlet.code.games.util.engine.DefaultEngine;
@@ -61,6 +62,9 @@ public final class CliManager {
                         break;
                     case CALCULATOR:
                         engine.run(new Calculator());
+                        break;
+                    case GCD:
+                        engine.run(new GCD());
                         break;
                     default:
                 }
