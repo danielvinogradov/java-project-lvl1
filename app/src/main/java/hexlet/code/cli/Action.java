@@ -39,7 +39,12 @@ public enum Action {
     /**
      * Игра "Арифметическая прогрессия".
      */
-    ARITHMETIC_PROGRESSION("Progression");
+    ARITHMETIC_PROGRESSION("Progression"),
+
+    /**
+     * Игра "Простое ли число?".
+     */
+    PRIME("Prime");
 
     /**
      * Описание действия.

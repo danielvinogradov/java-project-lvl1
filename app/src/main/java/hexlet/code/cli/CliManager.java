@@ -4,6 +4,7 @@ import hexlet.code.games.arithmeticprogression.ArithmeticProgression;
 import hexlet.code.games.calculator.Calculator;
 import hexlet.code.games.gcd.GCD;
 import hexlet.code.games.paritychecker.ParityChecker;
+import hexlet.code.games.prime.Prime;
 import hexlet.code.miniapps.greeter.Greeter;
 import hexlet.code.games.util.engine.DefaultEngine;
 import hexlet.code.games.util.engine.Engine;
@@ -69,6 +70,9 @@ public final class CliManager {
                         break;
                     case ARITHMETIC_PROGRESSION:
                         engine.run(new ArithmeticProgression());
+                        break;
+                    case PRIME:
+                        engine.run(new Prime());
                         break;
                     default:
                 }
