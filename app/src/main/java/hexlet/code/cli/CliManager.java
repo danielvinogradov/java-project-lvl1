@@ -48,9 +48,14 @@ public final class CliManager {
 
             try {
                 int userChoice = scanner.nextInt();
+                System.out.printf("Your choice: %d%n%n", userChoice);
                 Engine engine = new DefaultEngine(scanner, username);
 
                 Action userAction = Action.fromInt(userChoice);
+
+                if (username.equals(DEFAULT_USERNAME) && userAction != Action.GREET) {
+                    new Greeter(username, scanner, this::setUsername).start();
+                }
 
                 switch (userAction) {
                     case EXIT:

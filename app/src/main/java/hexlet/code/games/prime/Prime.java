@@ -34,7 +34,13 @@ public final class Prime implements Playable {
 
         final String correctAnswerString = correctAnswer.getName();
 
-        Predicate<String> predicate = (String answer) -> correctAnswer == UserBooleanAnswer.fromString(answer);
+        Predicate<String> predicate = (String answer) -> {
+            try {
+                return correctAnswer == UserBooleanAnswer.fromString(answer);
+            } catch (Exception e) {
+                return false;
+            }
+        };
 
         return new DefaultGameRoundData(title, question, correctAnswerString, predicate);
     }

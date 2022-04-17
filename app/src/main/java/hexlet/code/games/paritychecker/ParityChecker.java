@@ -41,8 +41,13 @@ public final class ParityChecker implements Playable {
                 UserBooleanAnswer.NO.getName());
         final String question = String.valueOf(randomNumber);
         final String correctAnswerString = correctAnswer.getName();
-        Predicate<String> predicate = (String answer) -> UserBooleanAnswer.fromString(answer) == correctAnswer;
-
+        Predicate<String> predicate = (String answer) -> {
+            try {
+                return UserBooleanAnswer.fromString(answer) == correctAnswer;
+            } catch (Exception e) {
+                return false;
+            }
+        };
 
         return new DefaultGameRoundData(title, question, correctAnswerString, predicate);
     }
