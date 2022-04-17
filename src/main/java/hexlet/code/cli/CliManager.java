@@ -90,6 +90,8 @@ public final class CliManager {
                 System.out.println("Something went wrong!");
             }
 
+            shouldContinue = false;
+
         }
     }
 
