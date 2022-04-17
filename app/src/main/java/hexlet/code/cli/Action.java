@@ -34,7 +34,12 @@ public enum Action {
     /**
      * Игра "Наибольший общий делитель (НОД)".
      */
-    GCD("GCD");
+    GCD("GCD"),
+
+    /**
+     * Игра "Арифметическая прогрессия".
+     */
+    ARITHMETIC_PROGRESSION("Progression");
 
     /**
      * Описание действия.

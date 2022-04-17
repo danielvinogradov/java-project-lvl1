@@ -1,5 +1,6 @@
 package hexlet.code.cli;
 
+import hexlet.code.games.arithmeticprogression.ArithmeticProgression;
 import hexlet.code.games.calculator.Calculator;
 import hexlet.code.games.gcd.GCD;
 import hexlet.code.games.paritychecker.ParityChecker;
@@ -65,6 +66,9 @@ public final class CliManager {
                         break;
                     case GCD:
                         engine.run(new GCD());
+                        break;
+                    case ARITHMETIC_PROGRESSION:
+                        engine.run(new ArithmeticProgression());
                         break;
                     default:
                 }
