@@ -55,6 +55,7 @@ public final class DefaultEngine implements Engine {
             System.out.printf("'%s' is wrong answer ;(. Correct answer was '%s'.%n",
                     answer,
                     gameRoundData.getCorrectAnswer());
+            System.out.printf("Let's try again, %s!", username);
             throw new IncorrectUserAnswerException();
         }
     }
