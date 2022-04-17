@@ -96,7 +96,7 @@ public final class CliManager {
         }
     }
 
-    private void setUsername(@NotNull String username) {
-        this.username = username;
+    private void setUsername(@NotNull String u) {
+        username = u;
     }
 }
