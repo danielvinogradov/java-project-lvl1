@@ -56,7 +56,7 @@ public final class Greeter extends AbstractMiniApp {
     @Override
     public void start() {
         System.out.println(WELCOME_MESSAGE);
-        System.out.println(ASK_NAME_MESSAGE);
+        System.out.printf("%s ", ASK_NAME_MESSAGE);
         String name = getScanner().next().trim();
 
         while (name.isEmpty()) {
