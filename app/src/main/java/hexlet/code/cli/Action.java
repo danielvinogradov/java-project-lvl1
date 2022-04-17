@@ -22,9 +22,14 @@ public enum Action {
 
     /**
      * Игра "Проверка на четность".
-     * {@link hexlet.code.miniapps.paritychecker.ParityChecker}
+     * {@link hexlet.code.games.paritychecker.ParityChecker}
      */
-    CHECK_PARITY("Even");
+    CHECK_PARITY("Even"),
+
+    /**
+     * Игра "Калькулятор".
+     */
+    CALCULATOR("Calc");
 
     /**
      * Описание действия.

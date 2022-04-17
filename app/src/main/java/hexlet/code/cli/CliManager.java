@@ -1,8 +1,10 @@
 package hexlet.code.cli;
 
-import hexlet.code.miniapps.Startable;
-import hexlet.code.miniapps.paritychecker.ParityChecker;
+import hexlet.code.games.calculator.Calculator;
+import hexlet.code.games.paritychecker.ParityChecker;
 import hexlet.code.miniapps.greeter.Greeter;
+import hexlet.code.games.util.engine.DefaultEngine;
+import hexlet.code.games.util.engine.Engine;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.InputMismatchException;
@@ -43,25 +45,26 @@ public final class CliManager {
 
             try {
                 int userChoice = scanner.nextInt();
+                Engine engine = new DefaultEngine(scanner, username);
+
                 Action userAction = Action.fromInt(userChoice);
-                Startable action = null;
 
                 switch (userAction) {
                     case EXIT:
                         shouldContinue = false;
                         break;
                     case GREET:
-                        action = new Greeter(username, scanner, this::setUsername);
+                        new Greeter(username, scanner, this::setUsername).start();
                         break;
                     case CHECK_PARITY:
-                        action = new ParityChecker(username, scanner);
+                        engine.run(new ParityChecker());
+                        break;
+                    case CALCULATOR:
+                        engine.run(new Calculator());
                         break;
                     default:
                 }
 
-                if (action != null) {
-                    action.start();
-                }
 
             } catch (InputMismatchException e) {
                 System.out.println("Wrong input!");

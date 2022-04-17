@@ -1,4 +1,4 @@
-package hexlet.code.cli.util;
+package hexlet.code.games.util;
 
 public enum UserBooleanAnswer {
 
