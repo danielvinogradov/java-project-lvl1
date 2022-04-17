@@ -19,8 +19,8 @@ public final class GCD implements Playable {
         final String title = "Find the greatest common divisor of given numbers.";
 
         final int maxNum = 100;
-        int a = random.nextInt(maxNum);
-        int b = random.nextInt(maxNum);
+        int a = random.nextInt(maxNum) + 1;
+        int b = random.nextInt(maxNum) + 1;
 
         final String question = String.format("%d %d", a, b);
 
