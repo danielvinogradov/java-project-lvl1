@@ -148,7 +148,7 @@ public final class GameRunnerCliApp implements CliApp {
 
                 List<GameRunnerAction> dontNeedUserNameGameActions = List.of(GameRunnerAction.EXIT,
                         GameRunnerAction.GREET);
-                if (!dontNeedUserNameGameActions.contains(userAction) || !user.isNameSet()) {
+                if (!dontNeedUserNameGameActions.contains(userAction) && !user.isNameSet()) {
                     greeter.start();
                 }
 

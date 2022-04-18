@@ -56,12 +56,24 @@ public enum UserBooleanAnswer {
         return UserBooleanAnswer.NO;
     }
 
+    /**
+     * Используется как заголовок игр, где от пользователя ожидается ответ "yes/no". Нужно,
+     * чтобы было проще изменить реализацию (например, если вместо "yes" нужно будет вводить "1" и т.д.).
+     *
+     * @return Заголовок игры с булевым ответом.
+     */
     public static String getBooleanAnswerGameTitle() {
         return String.format("Answer '%s' if number is even otherwise answer '%s'.",
                 YES.getName(),
                 NO.getName());
     }
 
+    /**
+     * Предикат для проверки в играх с булевым ответом.
+     *
+     * @param correctAnswer Правильный ответ.
+     * @return Предикат (функция проверки ответа на правильность).
+     */
     public static Predicate<String> getEqualityPredicate(UserBooleanAnswer correctAnswer) {
         return (String answer) -> {
             try {
