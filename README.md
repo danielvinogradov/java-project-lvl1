@@ -13,7 +13,7 @@
                      
 Сначала демонстрируется пример успешного завершения игры (правильные ответы во всех раундах), а потом поведения приложения в случае некорректного ответа. Самая последняя команда `exit` завершает запись `asciinema` и не имеет отношения к программе.
 
-[![asciicast](https://asciinema.org/a/K9iKvdeoWTefua4nxC04mIL61.svg)](https://asciinema.org/a/K9iKvdeoWTefua4nxC04mIL61)
+[![asciicast](https://asciinema.org/a/E4N0AbAOBDwjfZKcY8ay0v2D7.svg)](https://asciinema.org/a/E4N0AbAOBDwjfZKcY8ay0v2D7)
 
 ## Запуск
 
